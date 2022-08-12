@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:#F6DED7;
+    overflow-x:hidden;
+    
+    
+
+}
+
+.form{
+    background-color:#ED9345;
+}
+.bg-primary{
+    background-color:#F6DED7;
+}
+.teks{
+    color:#000;
+}
+.judul{
+    color: #8E3C38;
+}
+.submit{
+    background-color: #96473F;
+}
+.menu{
+    font-family:arial;
+}
+.input{
+    background-color: #Fd9202;
+}
+a{
+    position:relative;
+    color: white;
+    letter-spacing: 0.5px;
+}
+a:after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #8E3C38;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+a:hover:after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.zoom{
+    animation: zoom-in 5s ease infinite;
+}
+@keyframes zoom-in{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1, 1);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
